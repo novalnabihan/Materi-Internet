@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTTP dan HTTPS - Cara Kerja Web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-links">
+          <a href="internet.html">Internet</a>
+          <a href="https.html" class="active">HTTP/HTTPS</a>
+          <a href="domain.html">Domain</a>
+          <a href="hosting.html">Hosting</a>
+          <a href="dns.html">DNS</a>
+          <a href="browser.html">Browser</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-container">
+      <aside class="sidebar">
+        <div id="currentSection" class="current-section">
+          <h2 class="section-title">Pengertian HTTP/HTTPS</h2>
+        </div>
+      </aside>
+
+      <main class="content-area">
+        <section id="http" class="section">
+          <h2 class="section-title">Pengertian HTTP/HTTPS</h2>
+          <div class="section-content">
+            <p>
+              Kamu pasti sering melihat pada kolom bar address browser selalu
+              menampilkan awalan berupa kata HTTP atau HTTPS. Bagi kamu yang
+              belum mengetahui letak protokol tersebut, klik URL, lalu kata
+              “https” akan muncul di bilik URL pada browser. Ternyata awalan
+              kata tersebut memiliki peran penting khususnya dalam penyaluran
+              data laman web yang sedang dikunjungi.
+            </p>
+            <p>
+              Sebelum lanjut ke bahasan pokok berupa perbedaan antara HTTP dan
+              HTTPS, perlu kita membahas penjelasan singkat terlebih dahulu
+              mengenai kedua protokol tersebut.
+            </p>
+            <div class="image-container">
+              <img
+                src="./assets/http-vs-https.jpeg"
+                alt="HTTP HTTPS Illustration"
+                class="content-image"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section id="http" class="section">
+          <h2 class="section-title">Kenali Dulu HTTP dan HTTPS</h2>
+          <div class="section-content">
+            <p>
+              Hypertext Transfer Protocol (HTTP) merupakan sebuah protokol
+              jaringan aplikasi yang digunakan untuk mendistribusikan informasi
+              antara server dengan client. Server disini yang dimaksud adalah
+              jenis web server dengan bentuk fisik jaringan komputer yang
+              memiliki kapasitas penyimpanan data berskala besar. Selanjutnya
+              yang berperan sebagai client adalah web browser yang dapat
+              mengakses, menerima hingga menampilkan konten web melalui browser.
+            </p>
+            <p>
+              Sedangkan Hypertext Transfer Protocol Secure (HTTPS) merupakan
+              hasil pengembangan dari versi HTTP sebelumnya, HTTPS memiliki
+              fungsi keamanan yang lebih ketat sehingga membuat client merasa
+              aman dalam mengakses berbagai konten web. Protokol https ini
+              dikembangkan langsung oleh perusahaan berbasis IT Netscape
+              Communication Corp.
+            </p>
+            <p>
+              Fase pembentukan protokol ini mengalami sejarah yang sangat
+              panjang. Pada tahun 1990 HTTP mulai dipergunakan dalam “WWW”. Pada
+              versi awalnya, HTTP hanya memiliki kemampuan transfer dokumen
+              secara mentah. Maksud mentah tersebut adalah dokumen yang dikirim
+              hanya berupa isi dokumen tanpa memandang jenis dokumen tersebut.
+              Hingga pada tahun 1999 HTTP berkembang menjadi versi 1.1 dengan
+              kemampuannya dalam mengakomodasi proxy, cache serta koneksi yang
+              sanggup persisten.
+            </p>
+          </div>
+        </section>
+
+        <section id="http" class="section">
+          <h2 class="section-title">Perbedaan HTTP dan HTTPS</h2>
+          <div class="section-content">
+            <p>
+                Meski kedua protokol tersebut hanya berbeda satu huruf belakang saja, ternyata manfaat bagi client dan penjelajah dunia maya sedikit berbeda dari HTTP dengan HTTPS. Perbedaan tersebut hanya melalui pengembangan keamanan pada sistem protokol jaringan. Berikut perbedaan menonjol dari kedua protokol tersebut.
+            </p>
+          </div>
+          <h2 class="section-sub-title">Kemanan Data</h2>
+                <div class="section-content">
+                    <p>Data yang ditransmisikan melalui protokol HTTP tidak menjamin keamanan antara client dengan server. Hal ini yang menyebabkan banyaknya isu kejahatan berupa hacker data. Resiko menyebarnya data kepada subjek yang tidak dikenal sangat tinggi. Sedangkan HTTPS memiliki protokol kolaboratif berupa keamanan data yang ditransmisikan. Fasilitas ini yang membuat HTTPS banyak digunakan oleh web developer.
+                    </p>
+                    <p>Berkaitan dengan protokol keamanan data yang digunakan oleh HTTPS, setidaknya terdapat 3 prosedur yang digunakan. Berikut 3 prosedur yang digunakan oleh HTTPS untuk security data.
+                    </p>
+                    <p>
+                        <ul>
+                            <li>Autentikasi Server, dengan adanya protokol ini membuat client percaya bahwa data yang diakses merupakan data dari server yang dituju. Proses ini biasanya menggunakan validasi nama dan password client. Jika salah menampilkan proses validasi, maka server akan menolak respon dari client tersebut secara otomatis.
+                            </li>
+
+                            <li>Autentikasi Server, dengan adanya protokol ini membuat client percaya bahwa data yang diakses merupakan data dari server yang dituju. Proses ini biasanya menggunakan validasi nama dan password client. Jika salah menampilkan proses validasi, maka server akan menolak respon dari client tersebut secara otomatis.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <h2 class="section-sub-title">SSL</h2>
+                <div class="section-content">
+                    <div class="image-container">
+                        <img
+                          src="./assets/ssl.jpg"
+                          alt="HTTP Working Illustration"
+                          class="content-image"
+                        />
+                      </div>
+                    <p>Secara garis besar, protokol komunikasi antara client dengan server selalu menggunakan konsep HTTP. Jika ingin menerapkan protokol HTTPS, maka dibutuhkan sertifikat berupa SSL (Secure Socket Layers). Terdapat 6 jenis SSL yang dapat dibeli oleh web developer. Penggunaan ini akan memunculkan tanda gembok pada bilah alamat URL website. Sehingga pengunjung akan mempercayai website tersebut aman digunakan untuk pemberian informasi atau transaksi yang tergolong sensitif. SSL sangat berguna untuk merahasiakan informasi penting seperti password e-banking, e-money, identitas dan sebagainya.
+                    </p>  
+                </div>
+                <h2 class="section-sub-title">Penggunaan Port</h2>
+                <div class="section-content">
+                    <div class="image-container">
+                        <img
+                          src="./assets/port.jpg"
+                          alt="HTTP Working Illustration"
+                          class="content-image"
+                        />
+                      </div>
+                    <p>Perbedaan selanjutnya terletak pada penggunaan port. Port pada dasarnya memiliki arti socket, mungkin istilah socket untuk port sedikit benarnya. Lebih jelasnya port yang dimaksud disini adalah port logic yang tidak dapat dilihat dan dirasakan. Tetapi memiliki fungsi dalam menghubungkan antar perangkat secara protokol atau media lainnya. Port logic memiliki banyak macam jenis serta penggunaannya. Jika diurut dari 0 hingga 1000 akan memiliki fungsi yang berbeda – beda.
+                    </p>  
+                    <p>Pada HTTP port yang digunakan adalah port jenis 80. Jenis port ini berguna sebagai konektivitas web server secara umum dengan client. Sedangkan untuk bisa mengakses HTTPS melalui SSL dibutuhkan port 443 sebagai jaringan konektivitasnya.
+                    </p>
+                </div>
+                <h2 class="section-sub-title">Keuntungan Penggunaan</h2>
+                <div class="section-content">
+                    <div class="image-container">
+                        <img
+                          src="./assets/https.jpeg"
+                          alt="HTTP Working Illustration"
+                          class="content-image"
+                        />
+                      </div>
+                    <p>Semua pasti sudah bisa menebak bahwa keuntungan paling unggul dalam penggunaan protokol adalah HTTPS. Mungkin kamu pernah mengunjungi sebuah situs yang memiliki simbol gembok terbuka pada bilik URL. Hal tersebut menandakan bahwa website tersebut tidak aman jika dikunjungi oleh pengunjung. Terkadang pengunjung akan kesulitan dan hampir tidak bisa membuka laman website tersebut sehingga dialihkan ke laman lainnya.
+                    </p>  
+                    <p>Bagaimanapun, penjelajahan web server melalui protokol HTTPS akan memberikan kenyamanan bagi penjelajah browser. Sehingga pengunjung tidak perlu khawatir dalam memberikan informasi rahasia.
+                    </p>
+                </div>
+        </section>
+      </main>
+
+      <aside class="sidebar">
+        <a
+          href="https://dicoding.com/blog/perbedaan-http-dan-https/"
+          title="Sumber Bacaan"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path
+              d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+            ></path>
+          </svg>
+        </a>
+      </aside>
+
+    </div>
+
+    <script src="scroll-observer.js"></script>
+  </body>
+</html>

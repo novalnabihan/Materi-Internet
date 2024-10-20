@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 0;
+}
+
+.nav-links a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Main Content Styles */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px 20px;
+    display: flex;
+    gap: 2rem;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 25%;
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.current-section {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+/* Content Area Styles */
+.content-area {
+    width: 75%;
+}
+
+p {
+    margin-bottom: 20px; /* Atur jarak antar paragraf */
+}
+
+
+.section {
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.section-sub-title{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.section-sub-sub-title{
+    text-align: left;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.section-content {
+    text-align: center; /* Membuat semua konten center-aligned */
+    max-width: 800px; /* Membatasi lebar maksimal konten */
+    margin: 0 auto; /* Center konten secara horizontal */
+}
+
+.section-content p {
+    text-align:justify; /* Membuat paragraf tetap left-aligned */
+    margin-bottom: 1.5rem;
+}
+
+
+.image-container {
+    display: block; /* Mengubah menjadi block */
+    border: 2px solid #eee;
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin: 1.5rem auto; /* Memberikan margin atas-bawah dan auto untuk kanan-kiri */
+    max-width: fit-content; /* Menyesuaikan dengan ukuran gambar */
+}
+
+.content-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Memastikan gambar responsive tapi tidak terlalu besar */
+.content-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center gambar di dalam container */
+}
+
+/* Tambahan styling untuk konten area */
+.content-area {
+    width: 75%;
+    padding: 0 20px; /* Memberikan padding di kanan-kiri */
+}
+
+/* Utility Classes */
+.active {
+    background-color: #f0f0f0;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px; /*Hilangkan bullet default*/
+}
+
+li {
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.source-link {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+
+  .source-link svg {
+    width: 24px;
+    height: 24px;
+    color: #4B5563;
+    transition: color 0.3s ease;
+  }
+
+  .source-link:hover svg {
+    color: #2563eb; 
+    transform: scale(1.05);/* atau warna lain yang Anda inginkan saat hover */
+  }

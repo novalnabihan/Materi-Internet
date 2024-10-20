@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTTP dan HTTPS - Cara Kerja Web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    
+
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-links">
+          <a href="internet.html">Internet</a>
+          <a href="https.html" class="active">HTTP/HTTPS</a>
+          <a href="domain.html">Domain</a>
+          <a href="hosting.html">Hosting</a>
+          <a href="dns.html">DNS</a>
+          <a href="browser.html">Browser</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-container">
+      <aside class="sidebar">
+        <div id="currentSection" class="current-section">
+          <h2 class="section-title">Apa itu DNS?</h2>
+        </div>
+
+        
+      </aside>
+
+      <main class="content-area">
+        <section id="dns" class="section">
+          <h2 class="section-title">Apa itu DNS?</h2>
+          <div class="section-content">
+            <div class="image-container">
+              <img
+                src="./assets/dns.svg"
+                alt="HTTP HTTPS Illustration"
+                class="content-image"
+              />
+            </div>
+            <p>
+              DNS (sistem nama domain) menghubungkan nama domain ke alamat IP. Ini adalah bagian penting dari cara orang berkomunikasi secara online. DNS seperti buku telepon untuk internet. Berikut ini adalah cara kerja sistem nama domain.
+            </p>
+            <p>
+              Melalui sistem nama domain, alamat komputer diubah menjadi alamat IP. Setiap server atau gadget di internet memiliki alamat IP, yang merupakan singkatan dari alamat Protokol Internet. Ketika Anda membuka situs web di browser, informasi berpindah antara perangkat dan server situs web. Alamat IP perangkat Anda dan server digunakan untuk memastikan informasi yang tepat sampai ke orang yang tepat.
+            </p>
+            <p>Tentunya, Anda tidak memasukkan alamat IP ke dalam bilah alamat peramban saat ingin membuka situs web. Sebagai gantinya, Anda mengetikkan alamat URL, yang biasanya akan terlihat seperti ini: https://www.example.com. Sistem nama domain mengambil alamat URL dan mengubahnya menjadi alamat IP. Alamat IP adalah cara utama untuk menemukan situs yang Anda inginkan.
+            </p>
+            <p>DNS sangat membantu karena memungkinkan orang menggunakan URL yang pendek dan mudah diingat daripada harus mengingat alamat IP untuk setiap situs web yang mereka lihat, yang dapat berubah seiring waktu.
+            </p>
+          </div>
+        </section>
+
+        <section id="dns" class="section">
+          <h2 class="section-title">Jenis-Jenis Server DNS</h2>
+          <div class="section-content">
+            <p>
+              DNS bergantung pada server DNS, yang terbagi dalam dua kategori.
+            </p>
+          </div>
+          <h2 class="section-sub-title">Server DNS Rekursif</h2>
+                <div class="section-content">
+                    <p>DNS resolver, atau server nama domain rekursif, dibuat untuk membalas permintaan DNS dan menemukan catatan yang diperlukan untuk menemukan server nama root yang tepat. Jika server root tidak segera ditemukan, server DNS rekursif mungkin harus mengirimkan beberapa kali panggilan hingga menemukan nameserver. Server rekursif hanya bisa menjawab pertanyaan dengan mencari jawabannya di server DNS lain.
+                    </p>  
+                </div>
+          <h2 class="section-sub-title">Server DNS Resmi</h2>
+                <div class="section-content">
+                    <p>Server DNS otoritatif, juga disebut nameserver otoritatif, selalu menjadi titik data terakhir dalam proses mendapatkan alamat IP. Ini adalah penghubung terakhir dalam rantai server DNS. Ketika permintaan DNS masuk, server DNS resmi tidak perlu berbicara dengan server lain. Informasi yang diperlukan untuk menjawab permintaan DNS sudah ada di server resmi. Di sisi lain, kueri rekursif akan selalu menggunakan situs lain untuk mendapatkan informasi yang dibutuhkan.
+                    </p>  
+                </div>
+        </section>
+
+        <section id="dns" class="section">
+          <h2 class="section-title">Bagaimana Cara Kerja DNS</h2>
+          <div class="section-content">
+            <p>
+              DNS bekerja dengan mengirimkan permintaan pencarian DNS ke server. Proses ini dimulai saat Anda mengetikkan URL pada bilah alamat di peramban.
+            </p>
+            <p>Berikut ini adalah rincian langkah demi langkah dari proses pencarian DNS dan bagaimana resolusi DNS dicapai:
+            </p>
+            <p>
+              <ol>
+                <li>
+                  Nama domain dimasukkan ke dalam bilah URL browser.
+                </li>
+                <li>
+                  Setelah diminta, browser akan mengirimkan pesan ke jaringan untuk menanyakan jaringan atau alamat IP mana yang menjadi milik nama domain tersebut.
+                </li>
+                <li>
+                  Permintaan tersebut diterima oleh DNS resolver, atau pengulang DNS. Jika server rekursif tidak memiliki data IP yang diperlukan yang tersimpan dalam cache DNS, maka server tersebut akan mengirimkan lebih banyak kueri ke server nama root atau server nama TLD.
+                </li>
+                <li>
+                  Server nama root dan server nama TLD akan menerima kueri, dan bekerja bersama-sama untuk mempersempit tempat menemukan detail alamat IP yang benar.
+                </li>
+                <li>
+                  Titik data terakhir adalah nameserver otoritatif, di mana detail IP domain yang tepat dapat ditemukan.
+                </li>
+                <li>
+                  Informasi alamat IP diteruskan kembali ke resolver rekursif, yang memberikan alamat IP yang benar kepada peramban untuk dikunjungi. DNS resolver akan menyimpan catatan DNS untuk memudahkan akses pada saat pengguna ingin mengunjungi situs web yang dimaksud.
+                </li>
+                <li>
+                  Meskipun kedengarannya bekerja melalui empat server yang berbeda akan memakan waktu, pencarian DNS terjadi secara instan.
+                </li>
+              </ol>
+            </p>
+          </div>      
+        </section>
+
+        <section id="dns" class="section">
+          <h2 class="section-title">DNS vs Alamat IP</h2>
+          <div class="section-content">
+            <p>
+              Nomor DNS dan IP bekerja sama untuk membantu Anda menemukan situs web. Baik alamat URL maupun alamat IP diperlukan agar sistem nama domain dapat bekerja.
+            </p>
+            <p>
+              Catatan DNS sama seperti buku alamat online Anda. Anda sudah mengetahui nama (domain) orang (situs web) tersebut, jadi yang Anda perlukan hanyalah nomor teleponnya (alamat IP) untuk mulai berbicara.
+            </p>
+            <p>Server DNS membantu mencocokkan nomor IP dengan nama domain. Sebagian besar nama domain hanya memiliki satu alamat IP, tetapi ada juga yang memiliki lebih dari satu. Perusahaan besar seperti Apple atau Amazon dapat memiliki ribuan komputer di seluruh dunia, dan masing-masing memiliki alamat IP sendiri. Data DNS memastikan bahwa nama domain selalu terhubung ke server DNS lokal terbaik. Anda bisa mengubah server DNS yang terhubung dengan Anda jika perlu.
+            </p>
+          </div>
+        </section>
+
+        <section id="dns" class="section">
+          <h2 class="section-title">Mengubah Server DNS Anda</h2>
+          <div class="section-content">
+            <p>
+              Beralih ke server DNS yang dienkripsi dapat meningkatkan keamanan online dan kecepatan koneksi Anda. Selain itu, ini memungkinkan Anda untuk mengakses hal-hal yang diblokir. Jika server yang disediakan oleh penyedia layanan Internet Anda beroperasi dengan buruk, Anda mungkin ingin mempertimbangkan untuk menggunakan server DNS yang disediakan oleh pihak ketiga. Ini akan memberi Anda hasil penelusuran yang lebih baik dan privasi yang lebih baik. Tetapi hal pertama yang harus Anda lakukan adalah mencari tahu penyedia layanan DNS mana yang bisa Anda percayai. Dalam tulisan tentang cara mengubah server DNS ini, Anda akan menemukan semua informasi yang Anda perlukan tentang pemilihan server yang aman serta pemilihannya.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar">
+        <a
+          href="https://www.exabytes.co.id/blog/apa-itu-dns-server-adalah/"
+          class="source-link"
+          title="Sumber Bacaan"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path
+              d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+            ></path>
+          </svg>
+        </a>
+      </aside>
+    </div>
+
+    <script src="scroll-observer.js"></script>
+  </body>
+</html>
